@@ -1,0 +1,56 @@
+body {
+  background-image: url("Bk.jpg");
+}
+
+p {
+  color: white;
+  font-size: 26px;
+  margin-left: 160px;
+}
+.wavy {
+  position: relative;
+  margin-left: 60px;
+  font-size: 30px;
+  margin-top: 100px;
+}
+.wavy span {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 2em;
+
+  animation: animate 2s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+.image {
+  position: relative;
+  right: 20px;
+}
+footer {
+  background-color: rgba(250, 225, 225, 0.678);
+}
+.social-icons li {
+  list-style: none;
+  display: inline;
+  padding: 0.5rem;
+}
+
+.github {
+  color: black;
+}
+
+.linkedin {
+  color: #03679d;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
+}

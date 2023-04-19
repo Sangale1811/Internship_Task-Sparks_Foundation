@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Bank System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Banklogo.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+       
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  </head>
+
+  <body onload="loader()">
+    <div id="loading"></div>
+    <div class="mynav">
+  
+  <nav class="navbar navbar-expand-md navbar-bisque bg-bisque" style="background-color:rgb(48, 42, 42)" >
+   <a class="navbar-brand" href="index.html" style="color:rgb(28, 213, 242);font-family: cursive;"><img src="Banklogo.jpg" width="58px" height="55px" alt="" >Canara Bank</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html" style="color:white;font-size: 21px; margin-left: 50px;">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./transaction.html" style="color:white;font-size: 21px;margin-left: 30px;" >Customer</a>
+        </li>   
+      </ul>
+      </div>
+      </nav>
+      
+   <div class="container" >
+    <div class="wavy" style="margin-left: 40px;">
+      <marquee behavior="slide" direction="left" scrollamount="18">
+      <span style="--i: 1">Welcome</span>
+     
+      <span style="--i: 8">To</span>
+      
+      <span style="--i: 10;color:rgb(0, 204, 255);font-weight:bold;">Canara</span>
+     
+      <span style="--i: 15;color:rgb(0, 204, 255);font-weight:bold;">Bank</span>
+    </marquee>
+    </div>
+    
+    <br>
+    <p>Fastest and Secure way to transfer money</p>
+    <div class="img">
+   <img src="transaction.jpg" style="width:440px;margin-left:160px"> <img src="canara.jpg" width="410px" align="right" style="margin-left:100px" ></div>
+    <br>
+   <br>
+    <button id="btn btn-outline-success" type="submit" id="search-btn" style="margin-right:340px;width:220px;height:58px;background-color:white;font-size: 30px;font-weight: bold; color: rgb(6, 165, 233);border-radius: 10px;margin-left: 300px;" onclick="myFunction()">Get Started</button>
+    </div>
+
+    <!-- footer starts here -->
+    <footer>
+      <hr>
+      <div class="row text-center">
+        <div class="col-md-6">
+          <p style="font-size:20px;color:black;margin-left: 500px;">Copyright &#9400 2023; Designed by Shivani Sangale </p>
+          
+        </div>
+        <div class="col-md-6 text-center">
+            <ul class="social-icons">
+              Contact Me:
+              <li><a target="_blank" class="github" href="https://github.com/Sangale1811"><i class="fab fa-github fa-2x"></i></a></li>
+              
+              <li><a target="_blank" class="linkedin" href="https://www.linkedin.com/in/shivani-sangale-92031a228/"><i class="fab fa-linkedin fa-2x"></i></a></li>   
+            </ul>
+        </div>
+      </div>
+    </footer>
+    
+    <script>
+      function myFunction(){
+        window.location="transaction.html";
+      }
+    </script>
+
+<script>
+  var preloader = document.getElementById("loading");
+  function loader(){
+    preloader.style.display = 'none';
+  }
+</script>
+
+<script src="assets/js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+  </body>
+</html>
